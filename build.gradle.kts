@@ -36,6 +36,11 @@ dependencies {
     compileOnly(files("libs/NoammAddons-dev.jar"))
 }
 
+// jar is labelled with the Minecraft version it was built for: NoammWaterAddon-<mod>-<mc>.jar
+tasks.named<Jar>("jar") {
+    archiveVersion.set("$modVersion-$minecraftVersion")
+}
+
 tasks.withType<JavaCompile>().configureEach { options.release.set(25) }
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
     compilerOptions { jvmTarget.set(JvmTarget.JVM_25) }
