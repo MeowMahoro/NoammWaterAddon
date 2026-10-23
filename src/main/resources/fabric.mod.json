@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "noammwateraddon",
+  "version": "${version}",
+  "name": "NoammWaterAddon",
+  "description": "Dynamic Water Board solver for NoammAddons.",
+  "authors": [
+    "MeowMahoro"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.noamm.wateraddon.impl.dungeon.WaterAddonInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "${minecraft_version}",
+    "fabric-language-kotlin": "*",
+    "noammaddons": "*"
+  }
+}

@@ -1,0 +1,23 @@
+# Gradle / Kotlin
+.gradle/
+.kotlin/
+build/
+buildSrc/build/
+buildSrc/.gradle/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# local upstream dependency (provided by the user, see README)
+libs/*.jar
+
+# private development notes, not published
+docs/
+
+# run directory / logs
+run/
+logs/
+*.log
+out.txt
